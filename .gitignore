@@ -1,0 +1,9 @@
+# MATLAB
+*.asv
+*.asv.m
+*.mex*
+*.obj
+
+# Python
+__pycache__/
+*.pyc
