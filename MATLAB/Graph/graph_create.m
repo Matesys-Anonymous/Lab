@@ -8,13 +8,13 @@ Drive_letter = 'E';
 root = ':\Laboratory\実験データ\実験\生データ\';
 
 % 日付ごとにフォルダを変更する設定
-folder_year = '2025';
-folder_month = '10';% 1桁の場合は0Xと打つ
-folder_day = '10';% 1桁の場合は0Xと打つ
+folder_year = '2026';
+folder_month = '01';% 1桁の場合は0Xと打つ
+folder_day = '19';% 1桁の場合は0Xと打つ
 folder_add = '';% 追加データ用、データの欠損なら''と入力(初期値) 例：(DIC)など
 
 % 何Hzのデータか
-Hz = '65';
+Hz = '82';
 
 % pngファイル保存先フォルダ指定/将来の機能拡張用(ほとんどコードはある)
 path_png = '\png\';
@@ -118,6 +118,12 @@ xlabel(label_x,'FontSize',FONTSIZE,'FontName',FONTNAME)
 ylabel(label_y_um,'FontSize',FONTSIZE,'FontName',FONTNAME)
 legend(Hz_legend,'FontSize',FONTSIZE,'Location',LOCATION)
 grid('on')
+
+%% figureの識別メッセージ
+fprintf('Figure 1:μm(Left)\n');
+fprintf('Figure 2:μm→mm(Left)\n');
+fprintf('Figure 3:mm(Right)\n');
+fprintf('Figure 4:mm→μm(Right)\n');
 
 %% 画像の保存
 %{
